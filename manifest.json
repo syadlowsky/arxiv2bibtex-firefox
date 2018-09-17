@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "arXiv BibTeX",
+  "version": "1.0",
+
+  "description": "Prints arxiv bibtex item.",
+
+  "permissions": [
+	  "*://*.arxiv2bibtex.org/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.arxiv.org/*"],
+      "js": ["arxiv.js"]
+    }
+  ]
+
+}
